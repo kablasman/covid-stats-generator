@@ -1,0 +1,51 @@
+body {
+    background-color: #F1F3F3;
+    font-family: 'DM Sans', sans-serif;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #E1E7E7;
+    margin: 0;
+    padding: 1em;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    text-align: center;
+    padding-top: 3em;
+}
+
+p {
+    padding-bottom: 1em;
+}
+
+input {
+    border-radius: 2em;
+    border: none;
+    padding: 0.5em 0.6em;
+    box-shadow: 0px 1px 3px #abbebe;
+    background-color: #5F9F9F;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#inputValue {
+    align-content: center;
+    width: 13em;
+    box-shadow: 0px 1px 3px #abbebe;
+    background-color: white;
+}
+
+.map {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.map img {
+    width: 50%;
+}
