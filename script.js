@@ -6,6 +6,7 @@ const totalCases = document.querySelector('.totalCases')
 const newCases = document.querySelector('.newCases')
 const totalDeaths = document.querySelector('.totalDeaths')
 const newDeaths = document.querySelector('.newDeaths')
+const map = document.querySelector(".map")
 
 //adding click event to submit button that triggers GET for API data
 button.addEventListener("click", function() {
@@ -33,6 +34,7 @@ button.addEventListener("click", function() {
         const displayNewDeaths = response[0]["new_deaths"];
     
         // displaying data held in variables on index.html
+        map.innerHTML = `<img src="img/world.png" alt="image of map">`
         countryName.innerHTML = `${displayCountryName}`;
         date.innerHTML = `${displayDate}`;
         totalCases.innerHTML = `<h2>Total Cases</h2> ${displayTotalCases}`;
