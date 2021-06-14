@@ -34,7 +34,7 @@ button.addEventListener("click", function() {
         const displayNewDeaths = response[0]["new_deaths"];
     
         // displaying data held in variables on index.html
-        map.innerHTML = `<img src="img/world.png" alt="image of map">`
+        map.innerHTML = `<img src="img/world.png" alt="image of map" c>`
         countryName.innerHTML = `${displayCountryName}`;
         date.innerHTML = `${displayDate}`;
         totalCases.innerHTML = `<h2>Total Cases</h2> ${displayTotalCases}`;
