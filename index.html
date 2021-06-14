@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Country Data Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+	<body>
+        <header>
+            <h1>Country Data Generator</h1>
+        </header>
+        <main>
+            <section>
+                <form action="index.html" method="POST">
+                    <label for="country iso code">Enter your ISO Country Code (ex: CAN)</label>
+                    <input type="text" id="inputValue">
+                    <input type="button" value="Submit" class="button">
+                </form>
+            </section>
+
+            <div class="display">
+                <h1 class="countryName"></h1>
+                <h1 class="date"></h1>
+                <p class="totalCases"></p>
+                <p class="newCases"></p>
+                <p class="totalDeaths"></p>
+                <p class="newDeaths"></p>
+            </div>
+        </main>
+		<script src="script.js"></script>
+	</body>
+</html>
