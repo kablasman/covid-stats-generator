@@ -1,12 +1,12 @@
 body {
-    background-color: #F1F3F3;
+    background-color: #fdfaeb;
     font-family: 'DM Sans', sans-serif;
     margin: auto;
     background-repeat: no-repeat;
 }
 
 header {
-    background-color: #E1E7E7;
+    background-color: #FFCB47;
     margin: 0;
     padding: 1em;
 }
@@ -15,30 +15,74 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    margin: 0;
+}
+
 section {
     text-align: center;
-    padding-top: 3em;
+    padding-top: 2em;
 }
 
 p {
     padding-bottom: 1em;
 }
 
+a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: black;
+    background-color: #fdf3eb;
+    padding: 0 0.4em;
+    box-shadow: 0px 1px 3px rgb(190, 181, 156);
+    border-radius: 1em;
+}
+
 input {
     border-radius: 2em;
     border: none;
     padding: 0.5em 0.6em;
-    box-shadow: 0px 1px 3px #abbebe;
-    background-color: #5F9F9F;
-    color: white;
+    box-shadow: 0px 1px 3px #9e9a8f;
+    background-color: #0094AD;
     font-family: 'DM Sans', sans-serif;
+}
+
+table {
+    border: 1px solid #ced2d6;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+th {
+    padding: 1em;
+    border: 1px solid #ced2d6;
+    font-size: 1.1em;
+}
+
+td {
+    border: 1px solid #ced2d6;
+    padding: 1em;
 }
 
 #inputValue {
     align-content: center;
     width: 13em;
-    box-shadow: 0px 1px 3px #abbebe;
+    box-shadow: 0px 1px 3px #c9c5b5;
     background-color: white;
+}
+
+.button {
+    color: white;
+}
+
+.button:hover {
+    background-color: #4ed2e9;
+}
+
+.display {
+    padding: 0 3em;
+    margin: auto;
 }
 
 .map {
@@ -47,5 +91,5 @@ input {
 }
 
 .map img {
-    width: 50%;
+    width: 60%;
 }
