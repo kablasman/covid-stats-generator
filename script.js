@@ -33,12 +33,19 @@ button.addEventListener("click", function() {
         const displayNewDeaths = response[0]["new_deaths"];
     
         // displaying data held in variables on index.html
-        countryName.innerHTML = `${displayCountryName}`;
-        date.innerHTML = `${displayDate}`;
-        totalCases.innerHTML = `<h2>Total Cases</h2> ${displayTotalCases}`;
-        newCases.innerHTML = `<h2>New Cases</h2> ${displayNewCases}`;
-        totalDeaths.innerHTML = `<h2>Total Deaths</h2> ${displayTotalDeaths}`;
-        newDeaths.innerHTML = `<h2>New Deaths</h2> ${displayNewDeaths}`;
+        const divWrapper = document.querySelector('.display');
+        divWrapper.innerHTML = `
+        <h1 class="countryName">${displayCountryName}</h1>
+        <h2 class="date">${displayDate}</h2>
+        <h2 class="totalCases">Total Cases</h2>
+        <p>${displayTotalCases}</p>
+        <h2 class="newCases">New Cases</h2>
+        <p>${displayNewCases}</p>
+        <h2 class="totalDeaths">Total Deaths</h2>
+        <p>${displayTotalDeaths}</p>
+        <h2 class="newDeaths">New Deaths</h2>
+        <p>${displayNewDeaths}</p>
+        `
     })
     .catch(err => {
         console.error(err);

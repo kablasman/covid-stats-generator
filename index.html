@@ -8,27 +8,20 @@
     </head>
 	<body>
         <header>
-            <h1>COVID-19 Country Data Generator</h1>
+            <h1>COVID-19 Country Stats Generator</h1>
             <h2><a href="codes.html"> Alpha-3 ISO Codes</a></h2>
         </header>
         <main>
             <section>
+                <p>Enter your ISO Country Code (ex: CAN):</p>
                 <form action="index.html" method="POST">
-                    <p>Enter your ISO Country Code (ex: CAN):</p>
                     <input type="text" id="inputValue">
                     <input type="button" value="Submit" class="button">
                 </form>
                 <div class="map"><img src="img/13-132760_world-map-transparent-images-world-map-colorful-png.png" alt=""></div>
             </section>
 
-            <div class="display">
-                <h1 class="countryName"></h1>
-                <h1 class="date"></h1>
-                <p class="totalCases"></p>
-                <p class="newCases"></p>
-                <p class="totalDeaths"></p>
-                <p class="newDeaths"></p>
-            </div>
+            <div class="display"></div>
         </main>
 		<script src="script.js"></script>
 	</body>
