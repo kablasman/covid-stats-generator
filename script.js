@@ -35,16 +35,28 @@ button.addEventListener("click", function() {
         // displaying data held in variables on index.html
         const divWrapper = document.querySelector('.display');
         divWrapper.innerHTML = `
-        <h1 class="countryName">${displayCountryName}</h1>
-        <h2 class="date">${displayDate}</h2>
-        <h2 class="totalCases">Total Cases</h2>
-        <p>${displayTotalCases}</p>
-        <h2 class="newCases">New Cases</h2>
-        <p>${displayNewCases}</p>
-        <h2 class="totalDeaths">Total Deaths</h2>
-        <p>${displayTotalDeaths}</p>
-        <h2 class="newDeaths">New Deaths</h2>
-        <p>${displayNewDeaths}</p>
+        <table class="stats">
+            <tr>
+                <th class="countryName">${displayCountryName}</th>
+                <th class="date">${displayDate}</th>
+            </tr>
+            <tr>
+                <td class="totalCases">Total Cases</td>
+                <td>${displayTotalCases}</td>
+            </tr>
+            <tr>
+                <td class="newCases">New Cases</td>
+                <td>${displayNewCases}</td>
+            </tr>
+            <tr>
+                <td class="totalDeaths">Total Deaths</td>
+                <td>${displayTotalDeaths}</td>
+            </tr>
+            <tr>
+                <td class="newDeaths">New Deaths</td>
+                <td>${displayNewDeaths}</td>
+            </tr>
+        </table>
         `
     })
     .catch(err => {
