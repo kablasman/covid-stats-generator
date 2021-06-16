@@ -64,8 +64,14 @@ button.addEventListener("click", function() {
     function resetForm() {
        document.querySelector('#submitForm').reset()
     }
-
+    
+    //scroll to div element on click
+    function scrollToBottom() {
+        document.getElementById('display').scrollIntoView(false)
+    }
+ 
     // running functions
     getCountryData()
     resetForm()
+    scrollToBottom()
 })
