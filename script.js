@@ -31,7 +31,7 @@ button.addEventListener("click", function() {
         // displaying data held in variables on index.html
         const divWrapper = document.querySelector('.display');
         divWrapper.innerHTML = `
-        <table class="stats">
+        <table class="stats" id="tableScroll">
             <tr>
                 <th class="countryName">${displayCountryName}</th>
                 <th class="date">${displayDate}</th>
@@ -65,9 +65,10 @@ button.addEventListener("click", function() {
        document.querySelector('#submitForm').reset()
     }
     
-    //scroll to div element on click
+    //scroll to table element on click
     function scrollToBottom() {
-        document.getElementById('display').scrollIntoView(false)
+        const scrollView = document.getElementById('tableScroll')
+        scrollView.scrollTop = scrollView.scrollHeight;
     }
  
     // running functions
