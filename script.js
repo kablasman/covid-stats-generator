@@ -2,10 +2,6 @@
 const button = document.querySelector('.button')
 const countryName = document.querySelector('.countryName')
 const date = document.querySelector('.date')
-const totalCases = document.querySelector('.totalCases')
-const newCases = document.querySelector('.newCases')
-const totalDeaths = document.querySelector('.totalDeaths')
-const newDeaths = document.querySelector('.newDeaths')
 
 //adding click event to submit button that triggers GET for API data
 button.addEventListener("click", function() {
@@ -41,19 +37,19 @@ button.addEventListener("click", function() {
                 <th class="date">${displayDate}</th>
             </tr>
             <tr>
-                <td class="totalCases">Total Cases</td>
+                <td>Total Cases</td>
                 <td>${displayTotalCases}</td>
             </tr>
             <tr>
-                <td class="newCases">New Cases</td>
+                <td>New Cases</td>
                 <td>${displayNewCases}</td>
             </tr>
             <tr>
-                <td class="totalDeaths">Total Deaths</td>
+                <td>Total Deaths</td>
                 <td>${displayTotalDeaths}</td>
             </tr>
             <tr>
-                <td class="newDeaths">New Deaths</td>
+                <td>New Deaths</td>
                 <td>${displayNewDeaths}</td>
             </tr>
         </table>
