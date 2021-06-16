@@ -65,10 +65,12 @@ button.addEventListener("click", function() {
        document.querySelector('#submitForm').reset()
     }
     
-    //scroll to table element on click
+    //scroll to bottom of page on click (delay until element appears)
     function scrollToBottom() {
-        const scrollView = document.getElementById('tableScroll')
-        scrollView.scrollTop = scrollView.scrollHeight;
+        setTimeout(() => {
+            const scrollView = document.getElementById('tableScroll')
+            scrollView.scrollIntoView(false) 
+        }, 800);
     }
  
     // running functions
