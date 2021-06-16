@@ -62,8 +62,14 @@ button.addEventListener("click", function() {
     .catch(err => {
         console.error(err);
     });
+    } 
+
+    // reset form
+    function resetForm() {
+       document.querySelector('#submitForm').reset()
     }
 
-    // running function
+    // running functions
     getCountryData()
+    resetForm()
 })
