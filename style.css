@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 body {
-    background-color: #fdfaeb;
-    font-family: 'DM Sans', sans-serif;
-    margin: auto;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
     background-repeat: no-repeat;
+    margin: auto;
+}
+
+main {
+    max-width: 40em;
+    margin: auto;
 }
 
 header {
-    background-color: #FFCB47;
+    background-color: #b7ed8d;
     margin: 0;
     padding: 1em;
 }
 
 h1 {
     margin: 0;
+    margin-bottom: 0.2em;
+    font-size: 1.8em;
 }
 
 h2 {
@@ -28,6 +36,7 @@ section {
 
 p {
     padding-bottom: 1em;
+    text-align: left;
 }
 
 li {
@@ -39,8 +48,8 @@ a {
     text-decoration: none;
     color: black;
     background-color: white;
-    padding: 0 0.4em;
-    box-shadow: 0px 1px 3px rgb(190, 181, 156);
+    padding: 0.3em 0.5em;
+    box-shadow: 0px 1px 3px rgb(162, 162, 162);
     border-radius: 1em;
 }
 
@@ -48,9 +57,10 @@ input {
     border-radius: 2em;
     border: none;
     padding: 0.5em 0.6em;
-    box-shadow: 0px 1px 3px #9e9a8f;
-    background-color: #0094AD;
-    font-family: 'DM Sans', sans-serif;
+    padding-top: 0.8em;
+    box-shadow: 0px 1px 3px #959595;
+    background-color: #6fab49;
+    font-family: 'Poppins', sans-serif;
 }
 
 table {
@@ -76,13 +86,14 @@ td {
 }
 
 .button:hover {
-    background-color: #4ed2e9;
+    background-color: #5e903f;
 }
 
 .display {
-    padding: 0 3em;
+    padding: 6em;
     margin: auto;
     max-width: 40em;
+    text-align: left;
 }
 
 .countryName {
@@ -99,7 +110,7 @@ td {
 }
 
 .map img {
-    width: 70%;
+    width: 100%;
 }
 
 .stats { 
@@ -109,6 +120,6 @@ td {
 #inputValue {
     align-content: center;
     width: 13em;
-    box-shadow: 0px 1px 3px #c9c5b5;
+    box-shadow: 0px 1px 3px #b4b4b4;
     background-color: white;
 }
